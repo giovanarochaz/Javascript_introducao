@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Inscrição</title>
+        <script src="script.js"></script>
+   </head>
+   <body>
+     <form>
+        <h2 align= center>Cadastro</h2>
+        <div align= center>
+           <p>
+              <input type="button" value="Cadastrar Nome" onclick="Nome=prompt ('Seu nome: ' ,'')">
+              <input type="button" value="Cadastrar Email"onclick="Email=prompt ('Seu email: ' ,'')">
+              <input type="button" value="Solicitar Saque" onclick="saque=parseInt(prompt ('Valor do saque: ' ,''))">
+              <input type="button" value="Realizar Deposito" onclick="deposito=parseInt(prompt ('Valor do deposito: ' ,''))">
+              <input type="button" value="Emitir Pedido" onclick="escrever (this.form.area)">
+           <p><textarea name="area" cols="40" rows="10"></textarea>
+       </div>
+     </form>
+    </body>
+</html>
