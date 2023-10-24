@@ -1,0 +1,138 @@
+/*GERAL*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: auto; 
+    padding: 30px;
+}
+
+h3{
+    color:indianred;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha em telas menores */
+    justify-content: center;
+    align-items: center;
+}
+
+/*FORMS*/
+
+
+.form-container {
+    background-color: indianred;
+    padding: 20px;
+    border-radius: 5%;
+    width: 100%; /* Ocupa 100% da largura em telas menores */
+    max-width: 400px; /* Define uma largura máxima para evitar que o conteúdo se estenda muito */
+    margin: 10px; /* Adicione uma margem para separação entre o .form-container e .collapse */
+}
+
+.form-container h1 {
+    color: white;
+}
+
+.form-container input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.form-container label {
+    display: block; /* Faz com que os labels ocupem uma linha inteira */
+    margin-bottom: 10px;
+    margin-top: 10px;  /* Adiciona espaço entre os labels */
+}
+
+
+.form-container button {
+    border: none; /* Remove o contorno */
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo como cinza */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    color: indianred; /* Cor do texto como branco */
+    cursor: pointer; /* Mostrar cursor de mão ao passar o mouse sobre o botão */
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+}
+
+.form-container button:hover {
+    background-color: rgb(94, 92, 92); 
+    color: rgb(230, 230, 230); /* Cor do texto como branco */
+}
+
+/*RESULTADO*/
+
+.collapse {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.collapse-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.result-container {
+
+    background-color: rgb(94, 92, 92); 
+    padding: 20px;
+    border-radius: 5%;
+    width: 100%; /* Ocupa 100% da largura em telas menores */
+    max-width: 400px; /* Define uma largura máxima para evitar que o conteúdo se estenda muito */
+    margin: 10px; 
+    color:white;
+    height: 48vh;
+}
+
+.result-container h1 {
+    color: white;
+}
+
+.result-container p {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*RESPONSIVO*/
+@media (max-width: 768px) {
+    .collapse {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .collapse {
+        flex: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>POO</title>
+</head>
+<body>
+
+    <div class="collapse-container">
+        <div class="collapse">
+            <h3>Orientação a Objetos com JavaScript</h3>
+            <p>JavaScript usa objetos para organizar informações. Objetos têm ações (métodos) e características (propriedades).</p>
+        </div>
+        <div class="collapse">
+            <h3>Variáveis em JavaScript</h3>
+            <p>Variáveis em JavaScript podem conter números, texto, valores verdadeiros/falsos, listas, objetos, nulo ou indefinido.</p>
+        </div>
+        <div class="collapse">
+            <h3>Propriedades</h3>
+            <p>Propriedades são características associadas a um objeto. Por exemplo, um objeto "carro" pode ter propriedades como "cor" e "modelo" que podem ser acessadas usando a notação de ponto.</p>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="form-container">
+            <h1>Informações Pessoais</h1>
+            <form id="personForm">
+                <label for="firstName">Nome:</label>
+                <input type="text" id="firstName" required><br>
+
+                <label for="lastName">Sobrenome:</label>
+                <input type="text" id="lastName" required><br>
+
+                <label for="language">Idioma:</label>
+                <input type="text" id="language" required><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="result-container">
+            <h1>Detalhes Pessoais</h1>
+            <p>Primeiro Nome: <span id="displayFirstName"></span></p>
+            <p>Sobrenome: <span id="displayLastName"></span></p>
+            <p>Idioma: <span id="displayLanguage"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
