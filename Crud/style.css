@@ -1,0 +1,33 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu{
+    background-color: #17a2b8;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+th{
+    font-size: 16px;
+    font-weight: normal;
+    color: #17a2b8;
+    position: sticky;
+    top: 0;
+}
+
+.forms{
+    margin-top: 25px;
+    border-bottom: #6c757d 2px solid;
+}
+
+#personForm{
+    margin-bottom: 25px;
+}
+
+.table{
+    text-align: center;
+}
