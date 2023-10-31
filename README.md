@@ -8,3 +8,4 @@
 <p>Laço de Repetição: https://giovanarochaz.github.io/Javascript_introducao/Tabuada/text.html</p>
 <p>Orientação a Objetos com JS: https://giovanarochaz.github.io/Javascript_introducao/POO/home.html</p>
 <p>Orientação a Objetos com JS e CRUD: https://giovanarochaz.github.io/Javascript_introducao/Crud/index.html</p>
+<p>Evento e Validação: https://giovanarochaz.github.io/Javascript_introducao/Imagem/index.html</p>
