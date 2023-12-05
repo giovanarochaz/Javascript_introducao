@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+  <script src="script.js"></script>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="explicacao.html">Forms</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="imagem.html">Imagem</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Poema</a>
+            </li>
+        </ul>
+      </div>
+  </nav>
+
+    <div class="container">
+      <br><br><br>
+
+      <h4>REGEX</h4>
+      Expressões regulares (ou regex, as vezes regexp) são sequências de caracteres que descrevem um padrão de busca em um texto. Elas foram desenvolvidas para fazer buscas em texto de forma eficiente, e por isso mesmo que você ache que elas não façam parte do seu dia a dia, toda vez que você usa Ctrl+F no seu navegador ou editor de texto, elas estão lá (mesmo que escondidas).
+      <br><br><br><br><br>
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="basico">
+            <h4>METACTERES BASICOS</h4>
+            <p>.: Corresponde a qualquer caractere único, exceto uma nova linha.</p>
+            <p>^: Âncora de início de linha.</p>
+            <p>$: Âncora de final de linha.</p>
+            <p>[]: Conjunto de caracteres. Ex: [aeiou] corresponde a qualquer vogal.</p>
+            <p>|: Alternância. Ex: foo|bar corresponde a "foo" ou "bar".</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="quantificadores">
+            <h4>QUANTIFICADORES</h4>
+            <p>*: Corresponde a zero ou mais ocorrências do caractere anterior.</p>
+            <p>+: Corresponde a uma ou mais ocorrências do caractere anterior.</p>
+            <p>?: Corresponde a zero ou uma ocorrência do caractere anterior.</p>
+            <p>{n}: Corresponde exatamente a n ocorrências do caractere anterior.</p>
+            <p>{n,}: Corresponde a n ou mais ocorrências do caractere anterior.</p>
+            <p>{n,m}: Corresponde a pelo menos n e no máximo m ocorrências do caractere anterior.</p>
+          </div>
+        </div>
+      </div>
+
+      <h4>VALIDAÇÃO COM JQUERY </h4>
+    
+      <div class="container mt-5">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="text" class="form-control" id="phone" name="phone" required>
+                <small id="phoneHelp" class="form-text text-muted">Formato esperado: (99) 99999-9999</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+

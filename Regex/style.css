@@ -17,3 +17,35 @@
     color: rgb(255, 251, 0);
     font-weight: bold;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+div {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
